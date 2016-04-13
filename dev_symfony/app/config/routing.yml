@@ -1,0 +1,8 @@
+system_core:
+    resource: "@SystemCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
