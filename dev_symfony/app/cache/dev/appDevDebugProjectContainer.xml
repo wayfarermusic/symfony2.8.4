@@ -16,6 +16,7 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="AppBundle">AppBundle\AppBundle</parameter>
+      <parameter key="SystemCoreBundle">System\CoreBundle\SystemCoreBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -1768,7 +1769,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>570e48b9dd4362.00297886</argument>
+            <argument>570e5f1cef47d7.00057747</argument>
           </service>
         </argument>
       </argument>
@@ -1897,7 +1898,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>570e48b9dd4362.00297886</argument>
+            <argument>570e5f1cef47d7.00057747</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2688,6 +2689,10 @@
       <call method="addPath">
         <argument>C:\xampp\htdocs\symfony2.8.4\dev_symfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\xampp\htdocs\symfony2.8.4\dev_symfony\src\System\CoreBundle/Resources/views</argument>
+        <argument>SystemCore</argument>
       </call>
       <call method="addPath">
         <argument>C:\xampp\htdocs\symfony2.8.4\dev_symfony\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>

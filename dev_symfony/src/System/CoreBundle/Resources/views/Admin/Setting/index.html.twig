@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>管理画面</title>
+</head>
+<body>
+    <h1>管理画面</h1>
+    
+    <div id="container">
+        
+        <div id="contents">
+            
+            <div>
+                
+                <form action="{{ path('admin_setting') }}" method="post" {{form_enctype(form)}}
+                    
+                    <dl>
+                        <dt>Application Id</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt>アプリケーション名</dt>
+                        <dd>{{ form_widget(form.application_name) }}</dd>
+                    </dl>
+                    <dl>
+                        <dt>呼び出し元URL</dt>
+                        <dd></dd>
+                    </dl>
+                    <dl>
+                        <dt>有効・無効</dt>
+                        <dd></dd>
+                    </dl>
+                    
+                </form>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
